@@ -59,6 +59,8 @@ git clone https://github.com/cn-knight/easy-loop-engineering ~/.claude/skills/ea
 
 Then say "set up loop engineering for this project" in any project.
 
+After install, run `/skills` to check easy-loop-engineering is in the skill list, or just ask Claude Code whether it has it (restart Claude Code if it doesn't show).
+
 ### Codex
 
 Clone the repo where Codex can read it (project root or `~/.codex/`), open `AGENTS.md` as the Codex entry — reference it from your project's `AGENTS.md` or read it directly.

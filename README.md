@@ -59,6 +59,8 @@ git clone https://github.com/cn-knight/easy-loop-engineering ~/.claude/skills/ea
 
 然后在任意项目里说"为这个项目配置 loop engineering"。
 
+部署后用 `/skills` 检查技能清单是否已含 easy-loop-engineering，或直接问 Claude Code 是否具备该 skill（若未出现，重启 Claude Code 后再查）。
+
 ### Codex
 
 把仓库 clone 到 Codex 能读到的位置（项目根或 `~/.codex/`），打开 `AGENTS.md` 作为 Codex 入口——从你项目的 `AGENTS.md` 引用它，或直接阅读。
