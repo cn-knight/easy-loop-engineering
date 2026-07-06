@@ -27,11 +27,11 @@ Methodology from Addy Osmani's loop-engineering essay and Karpathy's *LOOPS.md* 
 
 Express the intent "let the agent run itself" in natural language inside any project, e.g.:
 
-- "为这个项目配置 loop engineering"
-- "配置自动化" / "让这个项目自动跑起来"
-- "给项目配 loop" / "帮我搭一个 loop"
 - "set up loop engineering for this project"
-- "make this project run itself" / "set up a self-running agent loop"
+- "configure automation" / "make this project run itself"
+- "set up a self-running agent loop" / "help me build a loop"
+
+The skill understands both English and Chinese.
 
 The skill decides which building blocks apply, proposes a plan → you confirm → it implements.
 
@@ -57,7 +57,7 @@ Periodically fetch data from an external API and process it — long-running pat
 git clone https://github.com/cn-knight/easy-loop-engineering ~/.claude/skills/easy-loop-engineering
 ```
 
-Then say "为这个项目配置 loop engineering" in any project.
+Then say "set up loop engineering for this project" in any project.
 
 ### Codex
 
