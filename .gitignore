@@ -11,3 +11,6 @@ desktop.ini
 
 # Claude Code local (per-machine, not for commit)
 .claude/settings.local.json
+
+# Local dev record (not for publish)
+开发与发布记录.md
