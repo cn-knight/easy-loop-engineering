@@ -57,9 +57,9 @@ loop engineering 的落地大致分两类，正好对应两种调度原语：
 git clone https://github.com/cn-knight/easy-loop-engineering ~/.claude/skills/easy-loop-engineering
 ```
 
-然后在任意项目里说"为这个项目配置 loop engineering"。
-
 部署后用 `/skills` 检查技能清单是否已含 easy-loop-engineering，或直接问 Claude Code 是否具备该 skill（若未出现，重启 Claude Code 后再查）。
+
+然后在任意项目里说“为这个项目配置 loop engineering”。
 
 ### Codex
 

@@ -57,9 +57,9 @@ Periodically fetch data from an external API and process it — long-running pat
 git clone https://github.com/cn-knight/easy-loop-engineering ~/.claude/skills/easy-loop-engineering
 ```
 
-Then say "set up loop engineering for this project" in any project.
-
 After install, run `/skills` to check easy-loop-engineering is in the skill list, or just ask Claude Code whether it has it (restart Claude Code if it doesn't show).
+
+Then say "set up loop engineering for this project" in any project.
 
 ### Codex
 
