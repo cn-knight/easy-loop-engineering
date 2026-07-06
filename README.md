@@ -80,8 +80,7 @@ easy-loop-engineering/
 ├── SKILL.md              # Claude Code 入口
 ├── AGENTS.md             # Codex 入口
 ├── references/           # 原典 + 概念问答（共享，agent 中立）
-├── examples/providers/   # 可选 provider 模型选择示例
-└── dev/loop/             # 本 skill 自身优化循环的设置示例
+└── examples/providers/   # 可选 provider 模型选择示例
 ```
 
 ## License

@@ -80,8 +80,7 @@ easy-loop-engineering/
 ├── SKILL.md              # Claude Code entry
 ├── AGENTS.md             # Codex entry
 ├── references/           # canonical texts + concept Q&A (shared, agent-neutral)
-├── examples/providers/   # optional provider model-selection examples
-└── dev/loop/             # real example of this skill's own optimization loop
+└── examples/providers/   # optional provider model-selection examples
 ```
 
 ## License
