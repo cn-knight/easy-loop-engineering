@@ -62,7 +62,13 @@ description: Use when the user wants to set up loop engineering or automation fo
 - **generator**（写码执行，禁自评）
 - **evaluator**（预设敌意，对 contract 逐条验）
 
-**模型分配原则（异构分离）**：planner 用最强推理模型；generator 用最强代码模型；evaluator 用与 generator **不同家族**的模型（降共谋）。具体选哪个由你的运行时与 provider 决定——可选 provider 的模型选择示例见 `examples/providers/`（如火山引擎 Coding Plan 的工作配置）。**逐个差异化就别设全局 env，靠各自 frontmatter 指定。**
+**模型分配原则（异构分离）**：planner 用最强推理模型；generator 用最强代码模型；evaluator 用与 generator **不同家族**的模型（降共谋）。
+
+- **作者用例**：Claude Code + 火山 Coding Plan——planner=`MiniMax-M2.7` / generator=`GLM-5.2` / evaluator=`Doubao-Seed-2.0-Code`（三家族异构，见 `examples/providers/volcengine/`）。
+- **其他家族同样适用**，由 agent 按原则为本项目角色选配：Claude 系列（opus/sonnet/haiku）、OpenAI 系列（o-series / gpt-4o 等）、或任何 provider。
+- **单家族兜底**：不同家族最佳；同家族不同 tier 次之；同模型 + 不同 subagent 定义（不同上下文+指令）仍可实现大部分 maker/checker 价值（Karpathy §II）。
+
+**逐个差异化就别设全局 env，靠各自 frontmatter 指定。**具体 provider 示例见 `examples/providers/`。
 
 **Claude Code subagent frontmatter 模板**（自包含，无需外部 skill）：
 ```

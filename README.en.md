@@ -67,6 +67,10 @@ Clone the repo where Codex can read it (project root or `~/.codex/`), open `AGEN
 
 The core methodology is decoupled from any specific agent: Claude Code is the primary runtime, Codex is a supported second runtime, with an "adapting to other agents" mapping table (see `SKILL.md`).
 
+## Models
+
+Author's setup: Claude Code + Volcengine Coding Plan (planner/generator/evaluator use GLM / MiniMax / Doubao — three heterogeneous families; see `examples/providers/volcengine/`). Model selection is **family-agnostic** — users on Claude, OpenAI, or any other family get the agent to pick appropriate per-role models following the same heterogeneous-separation principle.
+
 ## Structure
 
 ```

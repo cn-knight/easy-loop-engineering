@@ -67,6 +67,10 @@ git clone https://github.com/cn-knight/easy-loop-engineering ~/.claude/skills/ea
 
 核心方法论与具体智能体解耦：以 Claude Code 为主运行时，Codex 为支持的第二运行时，并附"适配其他智能体"映射表（见 `SKILL.md`）。
 
+## 模型
+
+作者用例：Claude Code + 火山引擎 Coding Plan（planner/generator/evaluator 用 GLM / MiniMax / Doubao 三家族异构，见 `examples/providers/volcengine/`）。skill 的模型选择**家族中立**——用 Claude 系列、OpenAI 系列、或其他家族的用户，agent 会按“异构分离”原则为本项目角色选配相应模型。
+
 ## 结构
 
 ```
